@@ -1,0 +1,22 @@
+Question 1: How do you specify a TCP socket in Python?
+socket.socket(family,sockettype,proto)
+proto = socket.SOL_TCP
+
+Question 2: What is the difference between a client socket and a server socket in Python?
+server socket needs to bind and listen, waiting for client connection
+
+
+Question 3: How do we instruct the OS to let us reuse the same bind port?
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+
+Question 4: What information do we get about incoming connections?
+Connected by ('127.0.0.1', 53730), host = '127.0.0.1', port = 53730
+
+
+Question 5: What is returned by recv() from the server after it is done sending the HTTP request?
+None
+
+
+Question 6: Provide a link to your code on GitHub.
+
